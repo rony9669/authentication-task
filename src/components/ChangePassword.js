@@ -19,7 +19,7 @@ const ChangePassword = () => {
     const newPassword = event.target.newPassword.value;
     changePassword(newPassword)
       .then(() => {
-        toast.success("Password changed successfully");
+        toast.success("Password changed successfully. Please login again.");
         handleLogout();
         navigate("/login");
       })
